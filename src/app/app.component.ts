@@ -21,18 +21,18 @@ export class AppComponent {
     +'&state=now'
   image
   masks = [
-    {path:'../assets/1.png'},
-    {path:'../assets/2.png'},
-    {path:'../assets/3.png'},
-    {path:'../assets/4.png'},
-    {path:'../assets/5.png'},
-    {path:'../assets/6.png'},
-    {path:'../assets/7.png'},
-    {path:'../assets/8.png'},
-    {path:'../assets/9.png'},
-    {path:'../assets/10.png'},
-    {path:'../assets/11.png'},
-    {path:'../assets/12.png'}
+    {path:'../assets/masks/1.png'},
+    {path:'../assets/masks/2.png'},
+    {path:'../assets/masks/3.png'},
+    {path:'../assets/masks/4.png'},
+    {path:'../assets/masks/5.png'},
+    {path:'../assets/masks/6.png'},
+    {path:'../assets/masks/7.png'},
+    {path:'../assets/masks/8.png'},
+    {path:'../assets/masks/9.png'},
+    {path:'../assets/masks/10.png'},
+    {path:'../assets/masks/11.png'},
+    {path:'../assets/masks/12.png'}
   ]
   activeMasks = []
   masksIsCollapsed = true;

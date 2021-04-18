@@ -113,11 +113,11 @@
       </div>
     </div>
 
-    <div *ngFor="let activeMask of activeMasks" class="draggableHelper"
+    <div *ngFor="let activeMask of activeMasks; index as activeMaskIndex;" class="draggableHelper"
          style="z-index:1000; display:inline-block; position: absolute; left: 0; top: 0;">
       <div class="img_wrp">
         <img class="image" src="{{activeMask}}"/>
-        <span aria-hidden="true" (click)="activeMasks.splice(activeMask)" class="close text-light">&times;</span>
+        <span aria-hidden="true" (click)="activeMasks.splice(activeMaskIndex, 1)" class="close text-light">&times;</span>
       </div>
     </div>
 
