@@ -75,7 +75,7 @@
       <div class=" position-sticky p-2 rounded" style="top: 0; z-index: 1000; "
            [ngStyle]="{'backdrop-filter':masksIsCollapsed?'':'blur(10px) grayscale(1)'}"
            [ngClass]="{'text-right':masksIsCollapsed, 'text-center':!masksIsCollapsed}">
-        <button type="button" class="btn" (click)="collapse.toggle()"
+        <button type="button" class="btn" (click)="collapse.toggle(); settingsIsCollapsed = true"
                 [ngClass]="{'btn-outline-dark':masksIsCollapsed, 'btn-dark':!masksIsCollapsed}">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sticky"
                viewBox="0 0 16 16">
