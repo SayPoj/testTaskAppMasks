@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "TestVkAuth": {
+    "testTaskAppMasks": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/TestVkAuth",
+            "outputPath": "dist/testTaskAppMasks",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -65,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "TestVkAuth:build"
+            "browserTarget": "testTaskAppMasks:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "TestVkAuth:build:production"
+              "browserTarget": "testTaskAppMasks:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "TestVkAuth:build"
+            "browserTarget": "testTaskAppMasks:build"
           }
         },
         "test": {
@@ -113,16 +114,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "TestVkAuth:serve"
+            "devServerTarget": "testTaskAppMasks:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "TestVkAuth:serve:production"
+              "devServerTarget": "testTaskAppMasks:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "TestVkAuth"
+  "defaultProject": "testTaskAppMasks"
 }

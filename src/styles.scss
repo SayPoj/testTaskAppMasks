@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+$primary: #5181b8;
+
+@import "bootstrap";
+app-root, html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div::-webkit-scrollbar {
+  width: 5px;
+}
+
+div::-webkit-scrollbar-track {
+
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
